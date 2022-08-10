@@ -43,12 +43,13 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import router from "@/router";
 
 @Options({
   components: {},
 })
 export default class Home extends Vue {
-  // collapsed: Boolean
+  collapsed: boolean | undefined;
 }
 const home = {
   data() {
@@ -56,6 +57,10 @@ const home = {
       collapsed: true,
     };
   },
+  mounted() {
+    console.log(11111)
+    router.push('/login')
+  }
 };
 </script>
 <style scoped>
