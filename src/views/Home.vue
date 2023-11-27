@@ -43,7 +43,6 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import router from "@/router";
 
 @Options({
   components: {},
@@ -59,7 +58,6 @@ const home = {
   },
   mounted() {
     console.log(11111)
-    router.push('/login')
   }
 };
 </script>
